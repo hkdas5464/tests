@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 
-export default function handler(req, res) {
+export default function handler(req:any, res:any) {
   if (req.method === 'POST') {
     const { fileName, newData } = req.body;
 
